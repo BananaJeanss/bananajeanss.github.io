@@ -39,6 +39,20 @@ main hr {
     border-radius: 2px;
 }
 
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 25px;
+}
+
+.profile-pic {
+    width: 5vmax;
+    border-radius: 50%;
+}
+
 .about {
     padding-left: 25%;
     padding-right: 25%;
