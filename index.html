@@ -1,101 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OutdatedDev's Portfolio</title>
-    <meta name="description" content="A showcase of my projects and skills in software development.">
-    <meta name="keywords" content="software, development, programming, python, html, css, javascript">
-    <meta name="author" content="OutdatedDev">
-    <meta name="theme-color" content="#003882">
-    <meta name="image" content="assets/favicon/favicon-32x32.png">
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-    <link rel="assets/favicon/apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="assets/favicon/favicon-32x32" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="assets/favicon/favicon-16x16" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-</head>
+    <meta
+      name="description"
+      content="A showcase of my projects and skills in software development."
+    />
+    <meta
+      name="keywords"
+      content="software, development, programming, python, html, css, javascript"
+    />
+    <meta name="author" content="OutdatedDev" />
+    <meta name="theme-color" content="#003882" />
+    <meta name="image" content="assets/favicon/favicon-32x32.png" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+    <link
+      rel="assets/favicon/apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="assets/favicon/favicon-32x32"
+      sizes="32x32"
+      href="/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="assets/favicon/favicon-16x16"
+      sizes="16x16"
+      href="/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script>
+      // Script to hide scroll indicator after scrolling
+      window.addEventListener("scroll", function () {
+        var scrollIndicator = document.querySelector(".scroll-indicator");
+        if (window.scrollY > 50) {
+          scrollIndicator.style.opacity = "0";
+          setTimeout(function () {
+            scrollIndicator.style.display = "none";
+          }, 500);
+        }
+      });
+    </script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>outdateddev.github.io</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about">About Me</a>
-                    |
-                    <a href="#projects">Projects</a>
-                    |
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+      <h1>outdateddev.github.io</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About Me</a>
+            |
+            <a href="#projects">Projects</a>
+            |
+            <a href="#contact">Contact</a>
+            |
+            <a href="blog/">Blog</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="scroll-indicator">
+        <span>&#x2193;</span>
+      </div>
     </header>
-    <hr>
+    <hr />
     <main>
-        <section id="about">
-            <div class="about">
-                <div class="profile">
-                    <h2>Welcome to my portfolio!</h2>
-                    <img src="https://github.com/outdateddev.png" alt="Profile Picture" class="profile-pic">
-                </div>
-                <a href="https://skillicons.dev">
-                    <img src="https://skillicons.dev/icons?i=js,php,postgres,html,css,lua,py" alt="SkillIcons">
-                </a>
-                <p>
-                    I am a developer with a passion for creating software that is both functional and
-                    beautiful. I have experience in a variety of programming languages. Check out my projects to see some of my work!
-                </p>
+      <section id="about">
+        <div class="about">
+          <div class="profile">
+            <h2>Welcome to my portfolio!</h2>
+            <a href="https://github.com/outdateddev" target="_blank">
+              <img
+                src="https://github.com/outdateddev.png"
+                alt="Profile Picture"
+                class="profile-pic"
+              />
+            </a>
+          </div>
+          <a href="https://skillicons.dev">
+            <img
+              src="https://skillicons.dev/icons?i=js,php,postgres,html,css,lua,py,linux"
+              alt="SkillIcons"
+            />
+          </a>
+          <p>
+            I am a developer from Estonia with a passion for creating software
+            that is both functional and beautiful. I have experience in a
+            variety of programming languages. Check out my projects to see some
+            of my work!
+          </p>
+          <br />
+        </div>
+      </section>
+      <hr />
+      <section id="projects">
+        <h2>Notable Projects</h2>
+        <div class="projects">
+          <a href="https://github.com/outdateddev/iracingrpc" target="_blank">
+            <div class="project">
+              <h3>iRacing Rich Presence</h3>
+              <img src="assets/irpc.png" alt="iRacingRPC Logo" />
+              <p>
+                Adds rich presence data to Discord from iRacing using pyirsdk.
+              </p>
+              <div class="skills">Python</div>
             </div>
-        </section>
-        <hr>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects">
-                <a href="https://github.com/outdateddev/iracingrpc" target="_blank">
-                    <div class="project">
-                        <h3>iRacing Rich Presence</h3>
-                        <img src="assets/irpc.png" alt="iRacingRPC Logo">
-                        <p>Adds rich presence data to Discord from iRacing using pyirsdk.</p>
-                        <div class="skills">Python</div>
-                    </div>
-                    <a href="https://github.com/outdateddev/outdateddev.github.io" target="_blank">
-                        <div class="project">
-                            <h3>outdateddev.github.io</h3>
-                            <img src="assets/favicon/favicon-32x32.png" alt="Roblox Groups Icon"
-                                style="width: 25%; max-width: 25;">
-                            <p>My personal portfolio website.</p>
-                            <div class="skills">HTML, CSS</div>
-                        </div>
-                    </a>
-                    <a href="https://github.com/outdateddev/roblox-ally-bot-outdev" target="_blank">
-                        <div class="project">
-                            <h3>Group Ally Bot</h3>
-                            <div class="archived">Public archive</div>
-                            <img src="assets/GroupsIcon.png" alt="Roblox Groups Icon"
-                                style="width: 50%; max-width: 50;">
-                            <p>Automatically sends up to 5 ally requests per hour to random groups on roblox.</p>
-                            <div class="skills">Python</div>
-                        </div>
-                    </a>
+          </a>
+          <a href="bananajns.site" target="_blank">
+            <div class="project">
+              <h3>bananajns.site</h3>
+              <img
+                src="assets/favicon/favicon-32x32.png"
+                alt="Favicon"
+                style="width: 25%; max-width: 25"
+              />
+              <p>My personal portfolio website, self-hosted.</p>
+              <div class="skills">HTML, CSS</div>
             </div>
-        </section>
-        <hr>
-        <section id="contact">
-            <h2>Contact</h2>
-            <ul>
-                <li><a href="https://github.com/outdateddev" target="_blank">Github</a></li>
-                <li><a href="https://discord.com/users/269514812881502209" target="_blank">Discord Profile</a></li>
-                <li><a href="https://discord.gg/m3jARGzvGs" target="_blank">Discord Server</a></li>
-                <li><a href="mailto:bananajeansc@gmail.com" target="_blank">bananajeansc@gmail.com</a></li>
-            </ul>
-        </section>
+          </a>
+        </div>
+      </section>
+      <hr />
+      <section id="blog">
+        <h2>Blog</h2>
+        <p>
+          Check out my blog for updates on my projects and other things I'm
+          working on.
+        </p>
+        <div class="projects">
+          <a href="bananajns.siteblog/">
+            <div class="project" style="width: 50vmax">
+              <h3>BananaJeans Blog</h3>
+              <img
+                src="assets/screenshot3.png"
+                alt="Screenshot of the BananaJeans Blog"
+                style="padding: 1.5%"
+              />
+              <p>Development stuff, gallery, updates, and more.</p>
+              <div class="skills">WordPress</div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <hr />
+      <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/outdateddev" target="_blank">Github</a>
+          </li>
+          <li>
+            <a
+              href="https://discord.com/users/269514812881502209"
+              target="_blank"
+              >Discord Profile</a
+            >
+          </li>
+          <li>
+            <a href="https://discord.gg/m3jARGzvGs" target="_blank"
+              >Discord Server</a
+            >
+          </li>
+          <li>
+            <a href="mailto:bananajeansc@gmail.com" target="_blank"
+              >bananajeansc@gmail.com</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
     <footer>
-        <p>&copy; 2024 OutdatedDev</p>
+      <p>&copy; 2024 BananaJeans</p>
+      <img
+        src="assets/estoniaemoji.png"
+        alt="Flag of Estonia"
+        width="35px"
+        height="35px"
+      />
     </footer>
-</body>
-
+  </body>
 </html>

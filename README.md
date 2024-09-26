@@ -7,6 +7,7 @@ My personal portfolio website.
 
 - **About Me**: A section that introduces me
 - **Projects**: Showcases some of my projects with links to their GitHub repositories.
+- **Blog**: A link to my personal blog.
 - **Contact**: Links to different profiles.
 
 ## Setup
