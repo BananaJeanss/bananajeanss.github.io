@@ -35,18 +35,6 @@
       href="/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
-    <script>
-      // Script to hide scroll indicator after scrolling
-      window.addEventListener("scroll", function () {
-        var scrollIndicator = document.querySelector(".scroll-indicator");
-        if (window.scrollY > 50) {
-          scrollIndicator.style.opacity = "0";
-          setTimeout(function () {
-            scrollIndicator.style.display = "none";
-          }, 500);
-        }
-      });
-    </script>
   </head>
 
   <body>
@@ -65,9 +53,6 @@
           </li>
         </ul>
       </nav>
-      <div class="scroll-indicator">
-        <span>&#x2193;</span>
-      </div>
     </header>
     <hr />
     <main>
