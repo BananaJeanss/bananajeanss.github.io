@@ -3,6 +3,8 @@
 
 My personal portfolio website.
 
+For the full experience, it's recommended to visit https://bananajns.site instead.
+
 ## Features
 
 - **About Me**: A section that introduces me
