@@ -1,5 +1,5 @@
 
-# [outdateddev.github.io](https://outdateddev.github.io)
+# [bananajeanss.github.io](https://bananajeanss.github.io)
 
 My personal portfolio website.
 
