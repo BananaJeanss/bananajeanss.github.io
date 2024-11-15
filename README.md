@@ -17,7 +17,7 @@ For the full experience, it's recommended to visit https://bananajns.site instea
 To view this website locally, clone this repository and open `index.html` in your browser.
 
 ```sh
-git clone https://github.com/outdateddev/outdateddev.github.io.git
-cd outdateddev.github.io
+git clone https://github.com/bananajeanss/bananajeanss.github.io.git
+cd bananajeanss.github.io
 index.html
 ```
